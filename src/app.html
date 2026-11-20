@@ -209,12 +209,14 @@ body.compact #grid th.title{height:28px}
 .mtools{display:flex;flex-wrap:wrap;gap:8px}
 .mtools .chip{height:42px;min-width:52px}
 .range input{width:62px}
-@media (max-width:1500px){header.top .t{display:none}}
+.dl{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+@media (max-width:1750px){header.top .t{display:none}}
 @media (max-width:760px){
   body{font-size:15px;padding-bottom:78px}
   header.top{position:static;padding:8px 10px;gap:8px}
   header.top h1{font-size:16px;margin:0}
   header.top .t{display:none}
+  .dl{display:none}
   .spacer{display:none}
   header.top button{padding:7px 10px}
   .holbar{flex-direction:column;align-items:flex-start;gap:6px;padding:8px 10px}
@@ -272,9 +274,11 @@ body.compact #grid th.title{height:28px}
   <button id="saveBtn" title="Descarga un archivo de respaldo con todo lo cargado">💾<span class="t"> Guardar respaldo</span></button>
   <button id="openBtn" title="Carga un respaldo guardado antes">📂<span class="t"> Abrir respaldo</span></button>
   <input id="openFile" type="file" accept=".json,application/json" hidden>
-  <button id="pngBtn" title="Descargar el cronograma como imagen (PNG)">🖼 Imagen</button>
-  <button id="pdfBtn" title="Descargar el cronograma como PDF">📄 PDF</button>
-  <button id="exportBtn" class="primary">⬇ Descargar como Excel</button>
+  <div class="dl">
+    <button id="pngBtn" title="Descargar el cronograma como imagen (PNG)">🖼 Descargar como imagen</button>
+    <button id="pdfBtn" title="Descargar el cronograma como PDF">📄 Descargar como PDF</button>
+    <button id="exportBtn" class="primary">⬇ Descargar como Excel</button>
+  </div>
 </header>
 
 <div class="backup" id="backupBar" hidden>
@@ -374,9 +378,9 @@ body.compact #grid th.title{height:28px}
 
 <div class="fabbox" id="fabbox">
   <div class="fabmenu">
-    <button id="fabXls">📊 Excel (.xlsx)</button>
-    <button id="fabPng">🖼 Imagen (PNG)</button>
-    <button id="fabPdf">📄 PDF</button>
+    <button id="fabXls">📊 Descargar como Excel</button>
+    <button id="fabPng">🖼 Descargar como imagen</button>
+    <button id="fabPdf">📄 Descargar como PDF</button>
   </div>
   <button class="fab primary" id="fab">⬇ Descargar ▾</button>
 </div>
