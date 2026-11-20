@@ -7,7 +7,7 @@ Abrí `cronograma.html` con doble clic (Chrome o Edge). No necesita internet ni 
 
 - Elegí un pincel (24, 16, 12, 11, 10, 8, 7, RP, LE, LAR, Gris) y tocá o arrastrá sobre los días, o tocá el nombre de una persona para cargarle días con un calendario.
 - Feriados: se marcan tocando los días en la barra de arriba (sábados y domingos van solos en amarillo).
-- "Descargar como Excel" genera el `.xlsx`. "Importar Excel" lee un `.xlsx` con el mismo formato.
+- "Descargar como Excel" genera el `.xlsx`; "Imagen" lo baja como PNG y "PDF" como PDF (A4 apaisado). "Importar Excel" lee un `.xlsx` con el mismo formato.
 - Todo se guarda en el navegador; usá "Guardar respaldo" para tener una copia.
 
 ## Para desarrollo
